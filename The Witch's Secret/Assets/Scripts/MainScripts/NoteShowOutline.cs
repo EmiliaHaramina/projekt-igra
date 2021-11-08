@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowOutline : MonoBehaviour
+public class NoteShowOutline : MonoBehaviour
 {
     public Sprite sprite;
     public Sprite outlinedSprite;
@@ -20,18 +20,16 @@ public class ShowOutline : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (OpenNote.noteOpened == false)
-        {
-            transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
-        }
+
+        transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
+
 
     }
 
     void OnMouseExit()
     {
-        if (OpenNote.noteOpened == false)
-        {
-            transform.GetComponent<SpriteRenderer>().sprite = sprite;
-        }
+
+        transform.GetComponent<SpriteRenderer>().sprite = sprite;
+
     }
 }

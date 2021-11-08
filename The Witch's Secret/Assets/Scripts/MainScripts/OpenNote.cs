@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class OpenNote : MonoBehaviour
 {
+    public static bool noteOpened;
     // Start is called before the first frame update
     void Start()
     {
-
+        noteOpened = false;
     }
 
     // Update is called once per frame
@@ -23,5 +24,7 @@ public class OpenNote : MonoBehaviour
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
+        noteOpened = true;
+
     }
 }

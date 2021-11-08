@@ -20,15 +20,18 @@ public class ShowDescription : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (numOfClicks == 0)
+        if (OpenNote.noteOpened == false)
         {
-            description.SetActive(true);
-            numOfClicks++;
-        }
-        else if (numOfClicks == 1)
-        {
-            description.SetActive(false);
-            numOfClicks = 0;
+            if (numOfClicks == 0)
+            {
+                description.SetActive(true);
+                numOfClicks++;
+            }
+            else if (numOfClicks == 1)
+            {
+                description.SetActive(false);
+                numOfClicks = 0;
+            }
         }
     }
 

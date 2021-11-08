@@ -6,6 +6,9 @@ TagManager:
   tags:
   - closingPanel
   - note
+  - ball
+  - objects
+  - fade
   layers:
   - Default
   - TransparentFX
