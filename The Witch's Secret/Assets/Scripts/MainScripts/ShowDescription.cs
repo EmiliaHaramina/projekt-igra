@@ -5,11 +5,12 @@ using UnityEngine;
 public class ShowDescription : MonoBehaviour
 {
     public GameObject description;
-    private int numOfClicks;
+    public static bool clickedObject;
+
     // Start is called before the first frame update
     void Start()
     {
-        numOfClicks = 0;
+        clickedObject = false;
         description.SetActive(false);
     }
 
@@ -18,23 +19,45 @@ public class ShowDescription : MonoBehaviour
     {
     }
 
-    private void OnMouseDown()
+    void OnMouseOver()
     {
-        if (OpenNote.noteOpened == false)
+        if (clickedObject == false)
         {
-            if (numOfClicks == 0)
+            if (OpenNote.noteOpened == false)
             {
+
                 description.SetActive(true);
-                numOfClicks++;
             }
-            else if (numOfClicks == 1)
-            {
-                description.SetActive(false);
-                numOfClicks = 0;
-            }
+        }
+        else
+        {
+            description.SetActive(false);
+        }
+    }
+    void OnMouseExit()
+    {
+        description.SetActive(false);
+    }
+
+    void OnMouseDown()
+    {
+        clickedObject = true;
+        description.SetActive(false);
+    }
+
+    void OnMouseUp()
+    {
+        Invoke("laterClik", 0.5f);
+        if (description.activeInHierarchy)
+        {
+            description.SetActive(false);
         }
     }
 
+    public void laterClik()
+    {
+        clickedObject = false;
+    }
 
 
 

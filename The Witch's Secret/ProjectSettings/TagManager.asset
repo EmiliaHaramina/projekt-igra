@@ -9,6 +9,7 @@ TagManager:
   - ball
   - objects
   - fade
+  - desc
   layers:
   - Default
   - TransparentFX

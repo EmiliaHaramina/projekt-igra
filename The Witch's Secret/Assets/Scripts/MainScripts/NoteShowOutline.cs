@@ -21,7 +21,7 @@ public class NoteShowOutline : MonoBehaviour
     void OnMouseOver()
     {
 
-        transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
+        this.gameObject.transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
 
 
     }
@@ -29,7 +29,8 @@ public class NoteShowOutline : MonoBehaviour
     void OnMouseExit()
     {
 
-        transform.GetComponent<SpriteRenderer>().sprite = sprite;
+        this.gameObject.transform.GetComponent<SpriteRenderer>().sprite = sprite;
 
     }
+
 }
