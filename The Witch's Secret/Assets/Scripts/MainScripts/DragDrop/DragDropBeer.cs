@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour
+public class DragDropBeer : MonoBehaviour
 {
 
     public static bool dragging, placed;
     private Camera cam;
     private Vector2 offset, originalPosition;
 
-    public GameObject slot;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,18 +34,21 @@ public class DragDrop : MonoBehaviour
     {
         if (OpenNote.noteOpened == false)
         {
+
             dragging = true;
             offset = GetMousePos() - (Vector2)transform.position;
+
         }
 
     }
 
     void OnMouseUp()
     {
-        if (Vector2.Distance(transform.position, slot.transform.position) < 2)
+        if (Vector2.Distance(transform.position, GameObject.FindGameObjectWithTag("cauldron").gameObject.transform.position) < 2)
         {
-            transform.position = slot.transform.position;
+            transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
+            CauldronSlot.objectsInCauldron++;
         }
         else
         {
@@ -58,6 +60,11 @@ public class DragDrop : MonoBehaviour
     Vector2 GetMousePos()
     {
         return cam.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    public void DestroyObject()
+    {
+        Destroy(this.gameObject);
     }
 
 

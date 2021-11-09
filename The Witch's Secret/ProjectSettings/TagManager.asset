@@ -10,6 +10,9 @@ TagManager:
   - objects
   - fade
   - desc
+  - slot
+  - cauldron
+  - crte
   layers:
   - Default
   - TransparentFX

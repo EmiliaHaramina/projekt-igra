@@ -21,6 +21,7 @@ public class ShowDescription : MonoBehaviour
 
     void OnMouseOver()
     {
+
         if (clickedObject == false)
         {
             if (OpenNote.noteOpened == false)
