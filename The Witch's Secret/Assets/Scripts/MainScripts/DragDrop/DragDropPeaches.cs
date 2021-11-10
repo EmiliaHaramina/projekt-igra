@@ -49,6 +49,7 @@ public class DragDropPeaches : MonoBehaviour
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;
+            CauldronSlot.objects.Add("peaches");
         }
         else
         {

@@ -49,6 +49,7 @@ public class DragDropVodka : MonoBehaviour
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;
+            CauldronSlot.objects.Add("vodka");
         }
         else
         {

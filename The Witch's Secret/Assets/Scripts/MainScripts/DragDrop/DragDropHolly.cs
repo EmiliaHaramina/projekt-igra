@@ -49,6 +49,7 @@ public class DragDropHolly : MonoBehaviour
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;
+            CauldronSlot.objects.Add("holly");
         }
         else
         {
