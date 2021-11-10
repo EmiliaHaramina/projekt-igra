@@ -49,6 +49,7 @@ public class DragDropMandragora : MonoBehaviour
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;
+            GameObject.FindGameObjectWithTag("cauldron").gameObject.GetComponent<Animator>().Play("ObjectDrop", -1, 0f);
             CauldronSlot.objects.Add("mandragora");
         }
         else

@@ -5,7 +5,7 @@ using UnityEngine;
 public class RestartPosition : MonoBehaviour
 {
     private Vector2 originalPosGin, originalPosMandragora, originalPosBeer, originalPosHolly, originalPosAbsinthe, originalPosPeaches
-    , originalPosWolfsbane, originalPosVodka;
+    , originalPosWolfsbane, originalPosVodka, originalPosGarum;
     public GameObject Mandragora;
     public GameObject Gin;
     public GameObject Beer;
@@ -14,6 +14,7 @@ public class RestartPosition : MonoBehaviour
     public GameObject Vodka;
     public GameObject Peaches;
     public GameObject Wolfsbane;
+    public GameObject Garum;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class RestartPosition : MonoBehaviour
         originalPosPeaches = Peaches.gameObject.transform.position;
         originalPosHolly = Holly.gameObject.transform.position;
         originalPosWolfsbane = Wolfsbane.gameObject.transform.position;
+        originalPosGarum = Garum.gameObject.transform.position;
     }
     void Awake()
     {
@@ -55,6 +57,8 @@ public class RestartPosition : MonoBehaviour
                 DragDropHolly.placed = false;
                 DragDropWolfsbane.dragging = false;
                 DragDropWolfsbane.placed = false;
+                DragDropGarum.dragging = false;
+                DragDropGarum.placed = false;
                 ///NAPISATI ZA SVE SKRIPTE
                 Gin.gameObject.transform.position = originalPosGin;
                 Mandragora.transform.position = originalPosMandragora;
@@ -64,6 +68,7 @@ public class RestartPosition : MonoBehaviour
                 Absinthe.transform.position = originalPosAbsinthe;
                 Holly.transform.position = originalPosHolly;
                 Peaches.transform.position = originalPosPeaches;
+                Garum.transform.position = originalPosGarum;
                 CauldronSlot.resOnce = true;
             }
         }

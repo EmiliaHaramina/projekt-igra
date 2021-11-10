@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDropPeaches : MonoBehaviour
+public class DragDropGarum : MonoBehaviour
 {
 
     public static bool dragging, placed;
@@ -50,7 +50,7 @@ public class DragDropPeaches : MonoBehaviour
             placed = true;
             CauldronSlot.objectsInCauldron++;
             GameObject.FindGameObjectWithTag("cauldron").gameObject.GetComponent<Animator>().Play("ObjectDrop", -1, 0f);
-            CauldronSlot.objects.Add("peaches");
+            CauldronSlot.objects.Add("garum");
         }
         else
         {

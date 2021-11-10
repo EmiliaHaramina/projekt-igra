@@ -74,23 +74,43 @@ public class CauldronSlot : MonoBehaviour
     {
         foreach (string obj in objects)
         {
-            if (!(objects.Contains("beer")))
+            //  if (PlayerPrefs.GetInt("Level") == 1)
+            //  {
+            if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
             {
                 if (doOnce == false)
                 {
 
                     Debug.Log("WRONG COMBINATION");
+
                     GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
-                    Invoke("laterdis", 1.5f);
+                    GameObject.FindGameObjectWithTag("wrongComb").gameObject.GetComponent<Animator>().Play("WrongCombination", -1, 0f);
+                    Invoke("laterdis", 1.2f);
                     restartPosition = true;
                     doOnce = true;
                 }
             }
+            else
+            {
+                if (doOnce == false)
+                {
+
+                    Debug.Log("SUCESS");
+
+                    //   GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
+                    Invoke("laterdis", 1.2f);
+                    restartPosition = true;
+                    doOnce = true;
+                }
+            }
+            //   }
+
         }
     }
 
     public void laterdis()
     {
+        objects.Clear();
         objectsInCauldron = 0;
         restartPosition = false;
     }
