@@ -10,10 +10,12 @@ public class CauldronSlot : MonoBehaviour
 
     public static bool restartPosition;
     public static bool resOnce;
+    public GameObject lovePotion;
     public static List<string> objects = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
+        lovePotion.SetActive(false);
         resOnce = false;
         restartPosition = false;
         doOnce = false;
@@ -84,7 +86,7 @@ public class CauldronSlot : MonoBehaviour
                     Debug.Log("WRONG COMBINATION");
 
                     GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
-                    GameObject.FindGameObjectWithTag("wrongComb").gameObject.GetComponent<Animator>().Play("WrongCombination", -1, 0f);
+                    //       GameObject.FindGameObjectWithTag("wrongComb").gameObject.GetComponent<Animator>().Play("WrongCombination", -1, 0f);
                     Invoke("laterdis", 1.2f);
                     restartPosition = true;
                     doOnce = true;
@@ -98,6 +100,7 @@ public class CauldronSlot : MonoBehaviour
                     Debug.Log("SUCESS");
 
                     //   GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
+                    lovePotion.SetActive(true);
                     Invoke("laterdis", 1.2f);
                     restartPosition = true;
                     doOnce = true;
