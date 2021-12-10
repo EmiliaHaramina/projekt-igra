@@ -37,8 +37,8 @@ public class OpenCrystallBall : MonoBehaviour
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(4).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(5).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(6).gameObject.SetActive(true);
-
         GameObject.FindGameObjectWithTag("objects").gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("objects").gameObject.transform.GetChild(10).gameObject.SetActive(true);
 
     }
 }
