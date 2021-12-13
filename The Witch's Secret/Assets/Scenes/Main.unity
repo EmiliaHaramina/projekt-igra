@@ -3727,8 +3727,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450854744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5999986, y: 14, z: 0}
-  m_LocalScale: {x: 1.3857999, y: 0.7745323, z: 1.3857999}
+  m_LocalPosition: {x: 1.7, y: 13.298, z: 0}
+  m_LocalScale: {x: 1.3816425, y: 0.9046537, z: 1.3857999}
   m_Children: []
   m_Father: {fileID: 1493393717}
   m_RootOrder: 0
@@ -4293,7 +4293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &510344704
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7429,8 +7429,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980836180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.77778, y: 1.8750001, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 37.77778, y: -0.863, z: 0}
+  m_LocalScale: {x: 4.9849997, y: 5.84, z: 5}
   m_Children:
   - {fileID: 1762759426}
   - {fileID: 1398070389}
@@ -7920,7 +7920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1094762171}
   m_Layer: 0
-  m_Name: expParent
+  m_Name: ExplosionParent
   m_TagString: explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9148,6 +9148,7 @@ GameObject:
   - component: {fileID: 1275527466}
   - component: {fileID: 1275527465}
   - component: {fileID: 1275527464}
+  - component: {fileID: 1275527467}
   m_Layer: 0
   m_Name: Wormwood
   m_TagString: Untagged
@@ -9274,6 +9275,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 82c311d301422c94cbbd5df9081be5f4, type: 3}
   outlinedSprite: {fileID: 21300000, guid: e703436b851c5864dab79aed86856e07, type: 3}
+--- !u!114 &1275527467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275527461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d13d0d22fc5354794e30382d10af3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285761796
 GameObject:
   m_ObjectHideFlags: 0
@@ -9341,7 +9354,7 @@ MonoBehaviour:
   Peaches: {fileID: 891517016}
   Wolfsbane: {fileID: 351263365}
   Garum: {fileID: 241846057}
-  Wormwood: {fileID: 0}
+  Wormwood: {fileID: 1275527461}
 --- !u!1 &1294194342
 GameObject:
   m_ObjectHideFlags: 0
@@ -14887,7 +14900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\tWormwood\n\nTraditionally green in color, the plant \nis also
+  m_Text: "\t\t\t\t\tWormwood\n\nTraditionally green in color, the plant \nis also
     referred to as \u2018the green fairy\u2019\nthanks to its widespread consumption
     \nand hallucinogenic effect.\n"
 --- !u!222 &2051478881

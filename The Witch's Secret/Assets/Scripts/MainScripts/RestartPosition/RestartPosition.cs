@@ -20,7 +20,7 @@ public class RestartPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        originalPosGin = transform.position;
+        originalPosGin = Gin.transform.position;
         originalPosMandragora = Mandragora.gameObject.transform.position;
         originalPosBeer = Beer.gameObject.transform.position;
         originalPosAbsinthe = Absinthe.gameObject.transform.position;
