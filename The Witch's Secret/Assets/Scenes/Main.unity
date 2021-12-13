@@ -9341,6 +9341,7 @@ MonoBehaviour:
   Peaches: {fileID: 891517016}
   Wolfsbane: {fileID: 351263365}
   Garum: {fileID: 241846057}
+  Wormwood: {fileID: 0}
 --- !u!1 &1294194342
 GameObject:
   m_ObjectHideFlags: 0
