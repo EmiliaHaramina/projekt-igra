@@ -25,7 +25,7 @@ public class Notebook : MonoBehaviour
             pomocni = GameObject.FindGameObjectWithTag("note")
                 .gameObject.transform.GetChild(5).gameObject.transform.position;
             GameObject.FindGameObjectWithTag("note")
-            .gameObject.transform.GetChild(5).gameObject.transform.position = new Vector3(-0.5f, 0, 0);
+            .gameObject.transform.GetChild(5).gameObject.transform.position = new Vector3(0, 0, 0);
             notClicked = false;
     }
         else
