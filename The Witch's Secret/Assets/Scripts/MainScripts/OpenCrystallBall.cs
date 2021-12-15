@@ -18,7 +18,7 @@ public class OpenCrystallBall : MonoBehaviour
 
     public void openBall()
     {
-        if (OpenNote.noteOpened == false)
+        if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
             GameObject.FindGameObjectWithTag("MainCamera").gameObject.GetComponent<Animator>().Play("GoIntoBall", -1, 0f);
             Invoke("laterInvokeBall", 2f);
@@ -38,7 +38,7 @@ public class OpenCrystallBall : MonoBehaviour
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(5).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(6).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("objects").gameObject.SetActive(false);
-        GameObject.FindGameObjectWithTag("objects").gameObject.transform.GetChild(10).gameObject.SetActive(true);
+        //   GameObject.FindGameObjectWithTag("objects").gameObject.transform.GetChild(10).gameObject.SetActive(true);
 
     }
 }

@@ -24,7 +24,7 @@ public class ShowDescription : MonoBehaviour
 
         if (clickedObject == false)
         {
-            if (OpenNote.noteOpened == false)
+            if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
             {
 
                 description.SetActive(true);

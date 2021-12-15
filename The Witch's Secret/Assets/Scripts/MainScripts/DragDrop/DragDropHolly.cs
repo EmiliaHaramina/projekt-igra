@@ -32,7 +32,7 @@ public class DragDropHolly : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (OpenNote.noteOpened == false)
+        if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
 
             dragging = true;

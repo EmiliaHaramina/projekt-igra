@@ -11,10 +11,13 @@ public class CauldronSlot : MonoBehaviour
     public static bool restartPosition;
     public static bool resOnce;
     public GameObject lovePotion;
+    public GameObject successPrefab;
+    public static bool unlockedPotion1;
     public static List<string> objects = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
+        unlockedPotion1 = false;
         lovePotion.SetActive(false);
         resOnce = false;
         restartPosition = false;
@@ -98,12 +101,8 @@ public class CauldronSlot : MonoBehaviour
                 {
 
                     Debug.Log("SUCESS");
-
-                    //   GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
-                    lovePotion.SetActive(true);
-                    Invoke("laterdis", 1.2f);
-                    restartPosition = true;
-                    doOnce = true;
+                    GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                    Invoke("beforeLater", 2f);
                 }
             }
             //   }
@@ -116,6 +115,22 @@ public class CauldronSlot : MonoBehaviour
         objects.Clear();
         objectsInCauldron = 0;
         restartPosition = false;
+    }
+
+    public void beforeLater()
+    {
+        unlockedPotion1 = true;
+        GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        OpenNote.noteOpened = true;
+        lovePotion.SetActive(true);
+        Invoke("laterdis", 1.2f);
+        restartPosition = true;
+        doOnce = true;
+    }
+
+    public void beforeBefore()
+    {
+
     }
 
 }

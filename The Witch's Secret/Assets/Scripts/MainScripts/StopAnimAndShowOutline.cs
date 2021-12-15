@@ -22,16 +22,16 @@ public class StopAnimAndShowOutline : MonoBehaviour
 
     void OnMouseOver()
     {
-
-        this.gameObject.GetComponent<Animator>().enabled = false;
-        this.gameObject.transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
+        this.gameObject.GetComponent<Animator>().Play("Empty");
+        transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
 
     }
 
     void OnMouseExit()
     {
-        this.gameObject.GetComponent<Animator>().enabled = true;
-        this.gameObject.transform.GetComponent<SpriteRenderer>().sprite = sprite;
+        this.gameObject.GetComponent<Animator>().Play("SmallPaperGlow");
+        transform.GetComponent<SpriteRenderer>().sprite = sprite;
+
     }
 
 

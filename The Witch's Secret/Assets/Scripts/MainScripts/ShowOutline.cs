@@ -20,7 +20,7 @@ public class ShowOutline : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (OpenNote.noteOpened == false)
+        if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
             transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
         }
@@ -29,7 +29,7 @@ public class ShowOutline : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (OpenNote.noteOpened == false)
+        if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
             transform.GetComponent<SpriteRenderer>().sprite = sprite;
         }

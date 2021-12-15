@@ -5,10 +5,11 @@ using UnityEngine;
 public class XButton : MonoBehaviour
 {
     public GameObject objects;
+    private static bool xPressable;
     // Start is called before the first frame update
     void Start()
     {
-
+        xPressable = true;
     }
 
     // Update is called once per frame
@@ -19,8 +20,12 @@ public class XButton : MonoBehaviour
 
     public void xPress()
     {
-        GameObject.FindGameObjectWithTag("fade").gameObject.GetComponent<Animator>().Play("FadeInsideBallReverse", -1, 0f);
-        Invoke("returnBall", 1f);
+        if (xPressable == true)
+        {
+            GameObject.FindGameObjectWithTag("fade").gameObject.GetComponent<Animator>().Play("FadeInsideBallReverse", -1, 0f);
+            Invoke("returnBall", 1f);
+            xPressable = false;
+        }
 
     }
 
@@ -35,7 +40,13 @@ public class XButton : MonoBehaviour
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(5).gameObject.SetActive(false);
         GameObject.FindGameObjectWithTag("ball").gameObject.transform.GetChild(6).gameObject.SetActive(false);
         objects.gameObject.SetActive(true);
+        Invoke("laterInvokex", 5f);
 
+    }
+
+    public void laterInvokex()
+    {
+        xPressable = true;
     }
 
 }
