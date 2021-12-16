@@ -30,9 +30,10 @@ public class HoverOverNotebook : MonoBehaviour
 
     void OnMouseExit()
     {
-        this.gameObject.GetComponent<Animator>().Play("NotebookMoveReverse", -1, 0f);
+
         if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
+            this.gameObject.GetComponent<Animator>().Play("NotebookMoveReverse", -1, 0f);
             transform.GetComponent<SpriteRenderer>().sprite = sprite;
         }
     }

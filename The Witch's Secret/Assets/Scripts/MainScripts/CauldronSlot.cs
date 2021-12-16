@@ -18,7 +18,7 @@ public class CauldronSlot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        oneSound=false;
+        oneSound = false;
         unlockedPotion1 = false;
         lovePotion.SetActive(false);
         resOnce = false;
@@ -90,9 +90,8 @@ public class CauldronSlot : MonoBehaviour
 
                     Debug.Log("WRONG COMBINATION");
                     SoundManagerScript.PlaySound("wrongIngredients");
-
-                    GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
-                    //       GameObject.FindGameObjectWithTag("wrongComb").gameObject.GetComponent<Animator>().Play("WrongCombination", -1, 0f);
+                    GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                    Invoke("laterExplode", 2f);
                     Invoke("laterdis", 1.2f);
                     restartPosition = true;
                     doOnce = true;
@@ -102,9 +101,10 @@ public class CauldronSlot : MonoBehaviour
             {
                 if (doOnce == false)
                 {
-                    if(!oneSound){
-                    SoundManagerScript.PlaySound("correctIngredients");
-                    oneSound = true;
+                    if (!oneSound)
+                    {
+                        SoundManagerScript.PlaySound("correctIngredients");
+                        oneSound = true;
                     }
                     Debug.Log("SUCESS");
                     GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
@@ -138,6 +138,11 @@ public class CauldronSlot : MonoBehaviour
     public void beforeBefore()
     {
 
+    }
+
+    public void laterExplode()
+    {
+        GameObject.FindGameObjectWithTag("explosion").gameObject.transform.GetChild(0).gameObject.GetComponent<Animator>().Play("Explosion", -1, 0f);
     }
 
 }

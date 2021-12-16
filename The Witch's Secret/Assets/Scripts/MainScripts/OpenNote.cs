@@ -29,6 +29,8 @@ public class OpenNote : MonoBehaviour
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(5).gameObject.SetActive(true);
+        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("WithoutOutline");
+        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("WithoutOutline");
 
         noteOpened = true;
 
