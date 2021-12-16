@@ -21,6 +21,7 @@ public class OpenNote : MonoBehaviour
 
     public void OpenPaper()
     {
+        SoundManagerScript.PlaySound("paper");
         glowingNote = true;
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(true);

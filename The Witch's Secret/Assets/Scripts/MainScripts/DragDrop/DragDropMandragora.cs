@@ -46,6 +46,8 @@ public class DragDropMandragora : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, GameObject.FindGameObjectWithTag("cauldron").gameObject.transform.position) < 2)
         {
+            SoundManagerScript.PlaySound("addIngredient");
+            SoundManagerScript.PlaySound("mandragora");
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;

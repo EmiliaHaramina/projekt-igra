@@ -19,6 +19,7 @@ public class OkayButton : MonoBehaviour
 
     public void ClosePaper()
     {
+        SoundManagerScript.PlaySound("paper");
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(false);
         GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(false);

@@ -46,6 +46,8 @@ public class DragDropGarum : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, GameObject.FindGameObjectWithTag("cauldron").gameObject.transform.position) < 2)
         {
+            SoundManagerScript.PlaySound("addIngredient");
+            SoundManagerScript.PlaySound("fishSauce");           
             transform.position = GameObject.FindGameObjectWithTag("slot").gameObject.transform.position;
             placed = true;
             CauldronSlot.objectsInCauldron++;

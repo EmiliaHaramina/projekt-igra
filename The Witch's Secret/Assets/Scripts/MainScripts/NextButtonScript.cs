@@ -18,6 +18,7 @@ public class NextButtonScript : MonoBehaviour
 
     public void nextPress()
     {
+        SoundManagerScript.PlaySound("paper");
         if (TextIndexes.activeIndex < 2)
         {
             TextIndexes.activeIndex++;

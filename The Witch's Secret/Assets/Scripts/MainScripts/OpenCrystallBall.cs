@@ -20,6 +20,9 @@ public class OpenCrystallBall : MonoBehaviour
     {
         if (OpenNote.noteOpened == false && Notebook.noteBookOpened == false)
         {
+            //Jakov
+            SoundManagerScript.PlaySound("mysticBall");
+            //
             GameObject.FindGameObjectWithTag("MainCamera").gameObject.GetComponent<Animator>().Play("GoIntoBall", -1, 0f);
             Invoke("laterInvokeBall", 2f);
         }

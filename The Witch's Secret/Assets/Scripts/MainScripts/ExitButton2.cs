@@ -19,6 +19,7 @@ public class ExitButton2 : MonoBehaviour
 
     public void ClosePaper()
     {
+     //   SoundManagerScript.PlaySound("paper");
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         OpenNote.noteOpened = false;
     }
