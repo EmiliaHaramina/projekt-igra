@@ -5,7 +5,7 @@ using UnityEngine;
 public class RestartPosition : MonoBehaviour
 {
     private Vector2 originalPosGin, originalPosMandragora, originalPosBeer, originalPosHolly, originalPosAbsinthe, originalPosPeaches
-    , originalPosWolfsbane, originalPosVodka, originalPosGarum, originalPosWormwood;
+    , originalPosWolfsbane, originalPosVodka, originalPosGarum, originalPosWormwood, originalPosFairyWings;
     public GameObject Mandragora;
     public GameObject Gin;
     public GameObject Beer;
@@ -16,6 +16,7 @@ public class RestartPosition : MonoBehaviour
     public GameObject Wolfsbane;
     public GameObject Garum;
     public GameObject Wormwood;
+    public GameObject FairyWings;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class RestartPosition : MonoBehaviour
         originalPosWolfsbane = Wolfsbane.gameObject.transform.position;
         originalPosGarum = Garum.gameObject.transform.position;
         originalPosWormwood = Wormwood.gameObject.transform.position;
+        originalPosFairyWings = FairyWings.gameObject.transform.position;
     }
     void Awake()
     {
@@ -63,6 +65,8 @@ public class RestartPosition : MonoBehaviour
                 DragDropGarum.placed = false;
                 DragDropWormwood.dragging = false;
                 DragDropWormwood.placed = false;
+                DragDropFairyWings.dragging = false;
+                DragDropFairyWings.placed = false;
                 ///NAPISATI ZA SVE SKRIPTE
                 Gin.gameObject.transform.position = originalPosGin;
                 Mandragora.transform.position = originalPosMandragora;
@@ -74,6 +78,7 @@ public class RestartPosition : MonoBehaviour
                 Peaches.transform.position = originalPosPeaches;
                 Garum.transform.position = originalPosGarum;
                 Wormwood.transform.position = originalPosWormwood;
+                FairyWings.transform.position = originalPosFairyWings;
                 CauldronSlot.resOnce = true;
             }
         }
