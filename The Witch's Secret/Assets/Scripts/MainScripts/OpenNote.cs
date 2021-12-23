@@ -21,18 +21,21 @@ public class OpenNote : MonoBehaviour
 
     public void OpenPaper()
     {
-        SoundManagerScript.PlaySound("paper");
-        glowingNote = true;
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(5).gameObject.SetActive(true);
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("WithoutOutline");
-        GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("WithoutOutline");
+        if (CauldronSlot.congratulationsPlaying == false)
+        {
+            SoundManagerScript.PlaySound("paper");
+            glowingNote = true;
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(5).gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("WithoutOutline");
+            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("WithoutOutline");
 
-        noteOpened = true;
+            noteOpened = true;
+        }
 
     }
 }

@@ -19,8 +19,11 @@ public class ExitButton2 : MonoBehaviour
 
     public void ClosePaper()
     {
-     //   SoundManagerScript.PlaySound("paper");
+        CauldronSlot.congratulationsPlaying = false;
+        //   SoundManagerScript.PlaySound("paper");
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         OpenNote.noteOpened = false;
+        CauldronSlot.unlockedPotion1 = true;
+
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CauldronSlot : MonoBehaviour
 {
+    public static bool congratulationsPlaying;
     public static int objectsInCauldron;
     public GameObject[] lines;
     private bool oneSound;
@@ -18,6 +19,7 @@ public class CauldronSlot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        congratulationsPlaying = false;
         oneSound = false;
         unlockedPotion1 = false;
         lovePotion.SetActive(false);
@@ -106,6 +108,7 @@ public class CauldronSlot : MonoBehaviour
                         SoundManagerScript.PlaySound("correctIngredients");
                         oneSound = true;
                     }
+                    congratulationsPlaying = true;
                     Debug.Log("SUCESS");
                     GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
                     Invoke("beforeLater", 1f);
@@ -125,7 +128,6 @@ public class CauldronSlot : MonoBehaviour
 
     public void beforeLater()
     {
-        unlockedPotion1 = true;
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
         lovePotion.SetActive(true);
