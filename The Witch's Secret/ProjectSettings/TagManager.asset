@@ -15,6 +15,7 @@ TagManager:
   - crte
   - explosion
   - wrongComb
+  - mainCanvas
   layers:
   - Default
   - TransparentFX

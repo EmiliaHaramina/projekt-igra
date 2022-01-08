@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ContinueButton : MonoBehaviour
 {
@@ -14,5 +15,16 @@ public class ContinueButton : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void ContinueGame()
+    {
+        GameObject.FindGameObjectWithTag("closingPanel").GetComponent<Animator>().Play("ClosePanelMenu", -1, 0f);
+        Invoke("LaterChangeSceneContinue", 2f);
+    }
+
+    public void LaterChangeSceneContinue()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
