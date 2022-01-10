@@ -7,11 +7,7 @@ public class AcitvateBeginnerPanelOnMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-    void Awake()
-    {
-        this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
     }
 
     // Update is called once per frame
