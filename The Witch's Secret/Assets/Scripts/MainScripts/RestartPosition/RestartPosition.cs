@@ -47,10 +47,11 @@ public class RestartPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CauldronSlot.restartPosition == true)
+        if (CauldronSlot.restartPosition == true || SaveAndExit.saveExitButtonPressed == true)
         {
             if (CauldronSlot.resOnce == false)
             {
+
                 ///NAPISATI ZA SVE SKRIPTE
                 DragDropGin.dragging = false;
                 DragDropGin.placed = false;
@@ -95,6 +96,7 @@ public class RestartPosition : MonoBehaviour
                 VampireTeeth.transform.position = originalPosVampireTeeth;
                 OliveOil.transform.position = originalPosOliveOil;
                 BlindMiceTails.transform.position = originalPosBlindMiceTails;
+                SaveAndExit.saveExitButtonPressed = false;
                 CauldronSlot.resOnce = true;
             }
         }

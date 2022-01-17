@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class SaveAndExit : MonoBehaviour
 {
     public static bool anyButtonPressed;
+    public static bool saveExitButtonPressed;
     // Start is called before the first frame update
     void Start()
     {
+        saveExitButtonPressed = false;
         anyButtonPressed = false;
     }
 
@@ -34,6 +36,7 @@ public class SaveAndExit : MonoBehaviour
         if (!anyButtonPressed)
         {
             anyButtonPressed = true;
+            saveExitButtonPressed = true;
             GameObject.Find("PauseMenu").gameObject.transform.GetChild(2).gameObject.SetActive(true);
             Invoke("changeToMenu", 1.5f);
 

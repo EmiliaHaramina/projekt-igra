@@ -18,7 +18,9 @@ public class CloseWhenFinished : MonoBehaviour
         if (FinishGameButton.finishButtonPressed == true && !closeOnce)
         {
             closeOnce = true;
+            FinishGameButton.finishButtonPressed = false;
             GameObject.Find("FinishGamePanel").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            Invoke("changeLevel", 1.35f);
             Invoke("changeToMenu", 1.5f);
         }
     }
@@ -26,5 +28,10 @@ public class CloseWhenFinished : MonoBehaviour
     public void changeToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void changeLevel()
+    {
+        PlayerPrefs.SetInt("Level", 1);
     }
 }

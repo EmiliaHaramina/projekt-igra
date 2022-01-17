@@ -13,6 +13,7 @@ public class CauldronSlot : MonoBehaviour
     public static bool restartPosition;
     public static bool resOnce;
     public GameObject lovePotion, greenFairyPotion, phantomWingsElixire, liquidFirePotion;
+    public GameObject lovePotionLocked, greenFairyPotionLocked, phantomWingsElixireLocked, liquidFirePotionLocked;
     public GameObject successPrefab;
     public static bool unlockedPotion1;
     public static List<string> objects = new List<string>();
@@ -226,7 +227,8 @@ public class CauldronSlot : MonoBehaviour
     {
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
-        lovePotion.SetActive(true);
+        //    lovePotionLocked.SetActive(false);
+        //    lovePotion.SetActive(true);
         Invoke("laterdis", 1.2f);
         restartPosition = true;
         doOnce = true;
@@ -237,7 +239,8 @@ public class CauldronSlot : MonoBehaviour
     {
         GameObject.Find("CongratulationsCont2").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
-        greenFairyPotion.SetActive(true);
+        //   greenFairyPotionLocked.SetActive(false);
+        //   greenFairyPotion.SetActive(true);
         Invoke("laterdis", 1.2f);
         restartPosition = true;
         doOnce = true;
@@ -248,7 +251,8 @@ public class CauldronSlot : MonoBehaviour
     {
         GameObject.Find("CongratulationsCont3").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
-        liquidFirePotion.SetActive(true);
+        //    liquidFirePotionLocked.SetActive(false);
+        //    liquidFirePotion.SetActive(true);
         Invoke("laterdis", 1.2f);
         restartPosition = true;
         doOnce = true;
@@ -258,7 +262,8 @@ public class CauldronSlot : MonoBehaviour
     {
         GameObject.Find("CongratulationsCont4").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
-        phantomWingsElixire.SetActive(true);
+        //    phantomWingsElixireLocked.SetActive(false);
+        //   phantomWingsElixire.SetActive(true);
         Invoke("laterdis", 1.2f);
         restartPosition = true;
         doOnce = true;

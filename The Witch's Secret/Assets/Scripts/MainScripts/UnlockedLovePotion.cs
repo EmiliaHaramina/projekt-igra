@@ -6,14 +6,14 @@ public class UnlockedLovePotion : MonoBehaviour
 {
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (PlayerPrefs.GetInt("Level") == 2 || PlayerPrefs.GetInt("Level") == 3 || PlayerPrefs.GetInt("Level") == 4 || PlayerPrefs.GetInt("Level") == 5)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         }
-        else
+        else if (PlayerPrefs.GetInt("Level") == 1 || PlayerPrefs.GetInt("Level") == 0)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
@@ -28,7 +28,7 @@ public class UnlockedLovePotion : MonoBehaviour
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         }
-        else
+        else if (PlayerPrefs.GetInt("Level") == 1 || PlayerPrefs.GetInt("Level") == 0)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);

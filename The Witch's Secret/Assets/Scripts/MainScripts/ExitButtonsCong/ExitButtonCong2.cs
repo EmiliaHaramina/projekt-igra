@@ -21,9 +21,10 @@ public class ExitButtonCong2 : MonoBehaviour
     {
         CauldronSlot.congratulationsPlaying = false;
         //   SoundManagerScript.PlaySound("paper");
-        GameObject.Find("CongratulationsCont2").gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        OpenNote.glowingNote = false;
         OpenNote.noteOpened = false;
         PlayerPrefs.SetInt("Level", 3);
+        GameObject.Find("CongratulationsCont2").gameObject.transform.GetChild(0).gameObject.SetActive(false);
 
     }
 }

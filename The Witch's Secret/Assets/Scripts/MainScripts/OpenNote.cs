@@ -23,18 +23,29 @@ public class OpenNote : MonoBehaviour
     {
         if (CauldronSlot.congratulationsPlaying == false)
         {
-            SoundManagerScript.PlaySound("paper");
-            glowingNote = true;
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(5).gameObject.SetActive(true);
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("WithoutOutline");
-            GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("WithoutOutline");
+            if (PlayerPrefs.GetInt("Level") != 5)
+            {
+                SoundManagerScript.PlaySound("paper");
+                glowingNote = true;
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(5).gameObject.SetActive(true);
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("WithoutOutline");
+                GameObject.FindGameObjectWithTag("note").gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("WithoutOutline");
 
-            noteOpened = true;
+                noteOpened = true;
+            }
+            else if (PlayerPrefs.GetInt("Level") == 5)
+            {
+                SoundManagerScript.PlaySound("paper");
+                glowingNote = true;
+                GameObject.Find("CongratulationsCont5").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
+                noteOpened = true;
+            }
         }
 
     }
