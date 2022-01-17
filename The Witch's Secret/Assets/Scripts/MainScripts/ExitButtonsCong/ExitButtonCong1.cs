@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitButton2 : MonoBehaviour
+public class ExitButtonCong1 : MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class ExitButton2 : MonoBehaviour
         //   SoundManagerScript.PlaySound("paper");
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         OpenNote.noteOpened = false;
-        CauldronSlot.unlockedPotion1 = true;
+        PlayerPrefs.SetInt("Level", 2);
 
     }
 }

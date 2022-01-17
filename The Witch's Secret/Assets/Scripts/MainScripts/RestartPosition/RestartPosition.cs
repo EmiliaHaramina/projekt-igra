@@ -5,7 +5,8 @@ using UnityEngine;
 public class RestartPosition : MonoBehaviour
 {
     private Vector2 originalPosGin, originalPosMandragora, originalPosBeer, originalPosHolly, originalPosAbsinthe, originalPosPeaches
-    , originalPosWolfsbane, originalPosVodka, originalPosGarum, originalPosWormwood, originalPosFairyWings;
+    , originalPosWolfsbane, originalPosVodka, originalPosGarum, originalPosWormwood, originalPosFairyWings, originalPosBlindMiceTails,
+    originalPosOliveOil, originalPosVampireTeeth;
     public GameObject Mandragora;
     public GameObject Gin;
     public GameObject Beer;
@@ -17,6 +18,9 @@ public class RestartPosition : MonoBehaviour
     public GameObject Garum;
     public GameObject Wormwood;
     public GameObject FairyWings;
+    public GameObject BlindMiceTails;
+    public GameObject VampireTeeth;
+    public GameObject OliveOil;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,9 @@ public class RestartPosition : MonoBehaviour
         originalPosGarum = Garum.gameObject.transform.position;
         originalPosWormwood = Wormwood.gameObject.transform.position;
         originalPosFairyWings = FairyWings.gameObject.transform.position;
+        originalPosOliveOil = OliveOil.gameObject.transform.position;
+        originalPosVampireTeeth = VampireTeeth.gameObject.transform.position;
+        originalPosBlindMiceTails = BlindMiceTails.gameObject.transform.position;
     }
     void Awake()
     {
@@ -67,6 +74,12 @@ public class RestartPosition : MonoBehaviour
                 DragDropWormwood.placed = false;
                 DragDropFairyWings.dragging = false;
                 DragDropFairyWings.placed = false;
+                DragDropVampireTeeth.dragging = false;
+                DragDropVampireTeeth.placed = false;
+                DragDropOliveOil.dragging = false;
+                DragDropOliveOil.placed = false;
+                DragDropBlindMiceTails.dragging = false;
+                DragDropBlindMiceTails.placed = false;
                 ///NAPISATI ZA SVE SKRIPTE
                 Gin.gameObject.transform.position = originalPosGin;
                 Mandragora.transform.position = originalPosMandragora;
@@ -79,6 +92,9 @@ public class RestartPosition : MonoBehaviour
                 Garum.transform.position = originalPosGarum;
                 Wormwood.transform.position = originalPosWormwood;
                 FairyWings.transform.position = originalPosFairyWings;
+                VampireTeeth.transform.position = originalPosVampireTeeth;
+                OliveOil.transform.position = originalPosOliveOil;
+                BlindMiceTails.transform.position = originalPosBlindMiceTails;
                 CauldronSlot.resOnce = true;
             }
         }

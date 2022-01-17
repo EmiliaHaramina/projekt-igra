@@ -12,7 +12,7 @@ public class CauldronSlot : MonoBehaviour
 
     public static bool restartPosition;
     public static bool resOnce;
-    public GameObject lovePotion;
+    public GameObject lovePotion, greenFairyPotion, phantomWingsElixire, liquidFirePotion;
     public GameObject successPrefab;
     public static bool unlockedPotion1;
     public static List<string> objects = new List<string>();
@@ -83,38 +83,134 @@ public class CauldronSlot : MonoBehaviour
     {
         foreach (string obj in objects)
         {
-            //  if (PlayerPrefs.GetInt("Level") == 1)
-            //  {
-            if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+            if (PlayerPrefs.GetInt("Level") == 1)
             {
-                if (doOnce == false)
+                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
                 {
-
-                    Debug.Log("WRONG COMBINATION");
-                    SoundManagerScript.PlaySound("wrongIngredients");
-                    GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
-                    Invoke("laterExplode", 2f);
-                    Invoke("laterdis", 1.2f);
-                    restartPosition = true;
-                    doOnce = true;
-                }
-            }
-            else
-            {
-                if (doOnce == false)
-                {
-                    if (!oneSound)
+                    if (doOnce == false)
                     {
-                        SoundManagerScript.PlaySound("correctIngredients");
-                        oneSound = true;
+
+                        Debug.Log("WRONG COMBINATION");
+                        SoundManagerScript.PlaySound("wrongIngredients");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("laterExplode", 2f);
+                        Invoke("laterdis", 1.2f);
+                        restartPosition = true;
+                        doOnce = true;
                     }
-                    congratulationsPlaying = true;
-                    Debug.Log("SUCESS");
-                    GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
-                    Invoke("beforeLater", 1f);
+                }
+                else
+                {
+                    if (doOnce == false)
+                    {
+                        if (!oneSound)
+                        {
+                            SoundManagerScript.PlaySound("correctIngredients");
+                            oneSound = true;
+                        }
+                        congratulationsPlaying = true;
+                        Debug.Log("SUCESS");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("beforeLater", 1f);
+                    }
                 }
             }
-            //   }
+            else if (PlayerPrefs.GetInt("Level") == 2)
+            {
+                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                {
+                    if (doOnce == false)
+                    {
+
+                        Debug.Log("WRONG COMBINATION");
+                        SoundManagerScript.PlaySound("wrongIngredients");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("laterExplode", 2f);
+                        Invoke("laterdis", 1.2f);
+                        restartPosition = true;
+                        doOnce = true;
+                    }
+                }
+                else
+                {
+                    if (doOnce == false)
+                    {
+                        if (!oneSound)
+                        {
+                            SoundManagerScript.PlaySound("correctIngredients");
+                            oneSound = true;
+                        }
+                        congratulationsPlaying = true;
+                        Debug.Log("SUCESS");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("beforeLater2", 1f);
+                    }
+                }
+            }
+            else if (PlayerPrefs.GetInt("Level") == 3)
+            {
+                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                {
+                    if (doOnce == false)
+                    {
+
+                        Debug.Log("WRONG COMBINATION");
+                        SoundManagerScript.PlaySound("wrongIngredients");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("laterExplode", 2f);
+                        Invoke("laterdis", 1.2f);
+                        restartPosition = true;
+                        doOnce = true;
+                    }
+                }
+                else
+                {
+                    if (doOnce == false)
+                    {
+                        if (!oneSound)
+                        {
+                            SoundManagerScript.PlaySound("correctIngredients");
+                            oneSound = true;
+                        }
+                        congratulationsPlaying = true;
+                        Debug.Log("SUCESS");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("beforeLater3", 1f);
+                    }
+                }
+            }
+            else if (PlayerPrefs.GetInt("Level") == 4)
+            {
+                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                {
+                    if (doOnce == false)
+                    {
+
+                        Debug.Log("WRONG COMBINATION");
+                        SoundManagerScript.PlaySound("wrongIngredients");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("laterExplode", 2f);
+                        Invoke("laterdis", 1.2f);
+                        restartPosition = true;
+                        doOnce = true;
+                    }
+                }
+                else
+                {
+                    if (doOnce == false)
+                    {
+                        if (!oneSound)
+                        {
+                            SoundManagerScript.PlaySound("correctIngredients");
+                            oneSound = true;
+                        }
+                        congratulationsPlaying = true;
+                        Debug.Log("SUCESS");
+                        GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                        Invoke("beforeLater4", 1f);
+                    }
+                }
+            }
 
         }
     }
@@ -126,11 +222,43 @@ public class CauldronSlot : MonoBehaviour
         restartPosition = false;
     }
 
-    public void beforeLater()
+    public void beforeLater1()
     {
         GameObject.Find("CongratulationsCont1").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         OpenNote.noteOpened = true;
         lovePotion.SetActive(true);
+        Invoke("laterdis", 1.2f);
+        restartPosition = true;
+        doOnce = true;
+        oneSound = false;
+    }
+
+    public void beforeLater2()
+    {
+        GameObject.Find("CongratulationsCont2").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        OpenNote.noteOpened = true;
+        greenFairyPotion.SetActive(true);
+        Invoke("laterdis", 1.2f);
+        restartPosition = true;
+        doOnce = true;
+        oneSound = false;
+    }
+
+    public void beforeLater3()
+    {
+        GameObject.Find("CongratulationsCont3").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        OpenNote.noteOpened = true;
+        liquidFirePotion.SetActive(true);
+        Invoke("laterdis", 1.2f);
+        restartPosition = true;
+        doOnce = true;
+        oneSound = false;
+    }
+    public void beforeLater4()
+    {
+        GameObject.Find("CongratulationsCont4").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        OpenNote.noteOpened = true;
+        phantomWingsElixire.SetActive(true);
         Invoke("laterdis", 1.2f);
         restartPosition = true;
         doOnce = true;

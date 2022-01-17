@@ -9,7 +9,22 @@ public class MenuVolumeScripte : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (PlayerPrefs.GetInt("Music") == 0)
+        {
+            musicOn.gameObject.GetComponent<Text>().text = "On";
+        }
+        else if (PlayerPrefs.GetInt("Music") == 1)
+        {
+            musicOn.gameObject.GetComponent<Text>().text = "Off";
+        }
+        if (PlayerPrefs.GetInt("SFX") == 0)
+        {
+            sfxOn.gameObject.GetComponent<Text>().text = "On";
+        }
+        else if (PlayerPrefs.GetInt("SFX") == 1)
+        {
+            sfxOn.gameObject.GetComponent<Text>().text = "Off";
+        }
     }
 
     // Update is called once per frame
