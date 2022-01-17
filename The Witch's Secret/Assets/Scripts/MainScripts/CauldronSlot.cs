@@ -111,7 +111,7 @@ public class CauldronSlot : MonoBehaviour
                         congratulationsPlaying = true;
                         Debug.Log("SUCESS");
                         GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
-                        Invoke("beforeLater", 1f);
+                        Invoke("beforeLater1", 1f);
                     }
                 }
             }

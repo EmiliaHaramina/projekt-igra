@@ -8,7 +8,7 @@ public class UnlockedLiquidFirePotion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("Level") == 5)
+        if (PlayerPrefs.GetInt("Level") == 4 || PlayerPrefs.GetInt("Level") == 5)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
@@ -23,7 +23,7 @@ public class UnlockedLiquidFirePotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Level") == 5)
+        if (PlayerPrefs.GetInt("Level") == 4 || PlayerPrefs.GetInt("Level") == 5)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
