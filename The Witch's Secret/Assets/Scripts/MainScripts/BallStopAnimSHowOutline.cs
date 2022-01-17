@@ -22,15 +22,21 @@ public class BallStopAnimSHowOutline : MonoBehaviour
 
     void OnMouseEnter()
     {
-        this.gameObject.GetComponent<Animator>().Play("EmptyBall");
-        transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
+        if (OpenNote.noteOpened == false)
+        {
+            this.gameObject.GetComponent<Animator>().Play("EmptyBall");
+            transform.GetComponent<SpriteRenderer>().sprite = outlinedSprite;
+        }
 
     }
 
     void OnMouseExit()
     {
-        this.gameObject.GetComponent<Animator>().Play("CrystallBallAnimation", -1, 0f);
-        transform.GetComponent<SpriteRenderer>().sprite = sprite;
+        if (OpenNote.noteOpened == false)
+        {
+            this.gameObject.GetComponent<Animator>().Play("CrystallBallAnimation", -1, 0f);
+            transform.GetComponent<SpriteRenderer>().sprite = sprite;
+        }
 
     }
 

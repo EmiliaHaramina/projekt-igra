@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 36982761}
   - component: {fileID: 36982760}
   - component: {fileID: 36982759}
+  - component: {fileID: 36982762}
   m_Layer: 0
   m_Name: LiquidFirePotionUnlocked
   m_TagString: Untagged
@@ -630,6 +631,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.6968155, y: 17.514507}
   m_EdgeRadius: 0
+--- !u!114 &36982762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36982756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7171335f67d941b9e347062555d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: {fileID: 1394439861}
 --- !u!1 &42699395
 GameObject:
   m_ObjectHideFlags: 0
@@ -23260,6 +23274,7 @@ GameObject:
   - component: {fileID: 716952290}
   - component: {fileID: 716952289}
   - component: {fileID: 716952288}
+  - component: {fileID: 716952291}
   m_Layer: 0
   m_Name: PhantomWingsElixirUnlocked
   m_TagString: Untagged
@@ -23392,6 +23407,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.82, y: 21.5}
   m_EdgeRadius: 0
+--- !u!114 &716952291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716952285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca7171335f67d941b9e347062555d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: {fileID: 805338715}
 --- !u!1 &737070472
 GameObject:
   m_ObjectHideFlags: 0
