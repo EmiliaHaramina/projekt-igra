@@ -669,7 +669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42699395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.565, y: 13.265, z: 0}
+  m_LocalPosition: {x: 2.37, y: 13.265, z: 0}
   m_LocalScale: {x: 1.4730458, y: 0.8817191, z: 1.3857999}
   m_Children: []
   m_Father: {fileID: 219729514}
@@ -1225,7 +1225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 5.275, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83123487
@@ -1255,16 +1255,16 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t    PHANTOM WINGS ELIXIR\n\nA magical elixir that makes an object
-    fly when \npoured over it. If someone accidentally drinks it,\nthey will turn
-    into a bat for a couple of hours. \nUnfortunately, some never turn back to human
-    if \nthey ingested too much. \r\n\n"
+  m_Text: "PHANTOM WINGS ELIXIR\n\nA magical elixir that makes an object fly when
+    \npoured over it. If someone accidentally drinks it,\nthey will turn into a bat
+    for a couple of hours. \nUnfortunately, those who ingest too much never\nturn
+    back to human.\n\n"
 --- !u!222 &83123488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1803,7 +1803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127633561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 253634171}
@@ -1846,7 +1846,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 2.711, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142109019
@@ -1876,15 +1876,24 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t   OLIVE OIL\n\nIt is commonly used in cooking, for frying\nfoods
-    or as a salad dressing. It is also used\nin cosmetics, pharmaceuticals, soaps
-    and\neven in witchcraft. Truly multipurpose."
+  m_Text: 'OLIVE OIL
+
+
+    Commonly used in cooking, for frying
+
+    foods or as
+    a salad dressing. It is also used
+
+    in cosmetics, pharmaceuticals, soaps and
+
+    even
+    in witchcraft. Truly multipurpose.'
 --- !u!222 &142109020
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18376,7 +18385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.94, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258377985
@@ -18406,15 +18415,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t VAMPIRE TEETH\n\nThe vampire fangs are the primary \nkilling
-    tool of vampires at close range. \nWhen crushed into fine dust they give\ninteresting
-    qualities to certain elixirs."
+  m_Text: "VAMPIRE TEETH\n\nVampire fangs are the primary \nkilling tool of vampires
+    at a close range. \nWhen crushed into fine dust, they give\ninteresting qualities
+    to certain elixirs."
 --- !u!222 &258377986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18703,7 +18712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 2.37, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284453228
@@ -18733,14 +18742,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t  PEACHES OF IMMORTALITY\n\nSpecial peaches have a mystic virtue\nof
-    conferring longevity on all who eat \nthem. Often added to wish for a long and
+  m_Text: "PEACHES OF IMMORTALITY\n\nSpecial peaches that have a mystic virtue\nof
+    conferring longevity on all who eat \nthem. Often used to wish for a long and
     \nhealthy life of a loved one.\n"
 --- !u!222 &284453229
 CanvasRenderer:
@@ -21089,7 +21098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 3.208321, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465584939
@@ -21119,15 +21128,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\tGARUM\n\nFermented fish sauce which was used\nas a condiment.
-    If you can ignore the smell\nthe benefits of this liquid are amazing, \nnothing
-    makes potions more potent.\n"
+  m_Text: "GARUM\n\nFermented fish sauce which was used\nas a condiment. If you can
+    ignore the smell,\nthe benefits of this liquid are amazing, \nnothing makes potions
+    more potent.\n"
 --- !u!222 &465584940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21606,7 +21615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 2.45, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526763628
@@ -21636,14 +21645,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\tAbSINTHE\n\nA highly alcoholic spirit around 45\u201374%\nABV
-    and a dangerously addictive \npsychoactive drug and hallucinogen.\n"
+  m_Text: "ABSINTHE\n\nA highly alcoholic spirit around 45\u201374%\nABV and a dangerously
+    addictive \npsychoactive drug and hallucinogen.\n"
 --- !u!222 &526763629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21686,7 +21695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.599999, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533039493
@@ -21716,14 +21725,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\t   GIN\n\nA medicinal liquor made by monks and\nalchemists.
-    Tastes like juniper berries. \n                    Very delicious\n"
+  m_Text: "GIN\n\nA medicinal liquor made by monks and\nalchemists. Tastes like juniper
+    berries. \nVery delicious\n"
 --- !u!222 &533039494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22083,7 +22092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562267581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.18, y: 2.09, z: 100}
+  m_LocalPosition: {x: -3.5, y: 2.09, z: 100}
   m_LocalScale: {x: 1.4247887, y: 1.4247887, z: 1.4247887}
   m_Children:
   - {fileID: 1112813701}
@@ -23134,7 +23143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.599999, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686578094
@@ -23164,14 +23173,23 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t  WOLFSBANE\n\nExtremely poisonous and must be dealt\nwith very
-    carefully. It can be found in\ncaves and werewolf lairs.\n"
+  m_Text: 'WOLFSBANE
+
+
+    Extremely poisonous and must be dealt
+
+    with very carefully.
+    It can be found in
+
+    caves and werewolf lairs.
+
+'
 --- !u!222 &686578095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23686,7 +23704,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 14
-  m_Sprite: {fileID: 21300000, guid: 51fcb5fdcff347048b1930d8b9673abb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ccf0da25f9cc24479f2c4b51dbff105, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -23928,7 +23946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.61, y: 16.805542}
+  m_AnchoredPosition: {x: 3.671, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782753483
@@ -23964,7 +23982,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: " BLIND MICE TAILS\n\nThree blind mice, three blind mice\r \nSee how they
+  m_Text: "BLIND MICE TAILS\n\nThree blind mice, three blind mice\r \nSee how they
     run, see how they run\r\nThey all ran after the farmer's wife\r\nWho cut off
     their tails with a carving knife.\r\n\n"
 --- !u!222 &782753484
@@ -24834,7 +24852,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 14
-  m_Sprite: {fileID: 21300000, guid: 7ccf0da25f9cc24479f2c4b51dbff105, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51fcb5fdcff347048b1930d8b9673abb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25289,7 +25307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.599999, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883396024
@@ -25319,14 +25337,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_Alignment: 1
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\tBEER\n\nOne of the world's oldest prepared \nalcoholic drinks.
-    Produced by the \nbrewing and fermentation of starches.\r\n"
+  m_Text: "BEER\n\nOne of the world's oldest prepared \nalcoholic drinks. Produced
+    by the \nbrewing and fermentation of starches.\r\n"
 --- !u!222 &883396025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27159,7 +27177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 5.275, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081795156
@@ -27189,16 +27207,16 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t    LIQUID FIRE POTION\n\nThere aren\u2019t many things that could
-    scare the big \nbad wolf like fire does. This combination of fiery \nbeer and
-    rage of the farmers wife lights a flame \nin the consumers spirit bright enough
-    to chase \naway any beast.\n"
+  m_Text: "LIQUID FIRE POTION\n\nThere aren\u2019t many things that could scare the
+    big \nbad wolf like fire does. This combination of fiery \nbeer and rage of a
+    farmer's wife lights a flame \nin the consumers spirit bright enough to chase
+    \naway any beast.\n"
 --- !u!222 &1081795157
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28044,7 +28062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184446087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.5, y: -8.44, z: 0.00002034505}
+  m_LocalPosition: {x: -14.6, y: -8.44, z: 0.00002034505}
   m_LocalScale: {x: 2.613948, y: 2.613948, z: 2.613948}
   m_Children:
   - {fileID: 1134194579}
@@ -30300,7 +30318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 5.275, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1294194344
@@ -30330,15 +30348,26 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t    GREEN FAIRY POTION\n\nWhen spilled on the ground fairies are
-    attracted\nto its aromatic smell and mesmerized by the taste.\nSometimes they
-    will gift you temporary flight or \nin a worse case a one way trip to the Neverland.\n"
+  m_Text: 'GREEN FAIRY POTION
+
+
+    When spilled on the ground, fairies are attracted
+
+    to
+    its aromatic smell and mesmerized by the taste.
+
+    Sometimes they will gift
+    you temporary flight or,
+
+    in the worst case, a one-way trip to the Neverland.
+
+'
 --- !u!222 &1294194345
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30777,7 +30806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360502457}
   m_LocalRotation: {x: -0, y: -0, z: -0.09541691, w: 0.99543744}
-  m_LocalPosition: {x: -5.6085343, y: -8.337982, z: 153.10449}
+  m_LocalPosition: {x: -9.9, y: -7.5, z: 153.10449}
   m_LocalScale: {x: 2.1553545, y: 2.1553545, z: 2.1553545}
   m_Children:
   - {fileID: 1212142500}
@@ -31457,7 +31486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394439861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.11, y: -6.47, z: 0}
+  m_LocalPosition: {x: -12.4, y: -6.47, z: 0}
   m_LocalScale: {x: 2.2476232, y: 2.2476232, z: 2.2476232}
   m_Children:
   - {fileID: 1239631846}
@@ -37997,7 +38026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.2, y: 17.1}
+  m_AnchoredPosition: {x: 1.599999, y: 17.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601369374
@@ -38027,15 +38056,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t  SEA HOLLY\n\nThese flowering plants were believed\nto be a
-    strong aphrodisiac. They \nresemble a plume thistle, but its flowers \nare metallic
-    blue rather than mauve.\n"
+  m_Text: "SEA HOLLY\n\nThese flowering plants were believed\nto be a strong aphrodisiac.
+    They \nresemble a plume thistle, but its flowers \nare metallic blue rather than
+    mauve.\n"
 --- !u!222 &1601369375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39043,7 +39072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700298316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5999986, y: 14, z: 0}
+  m_LocalPosition: {x: 2.21, y: 14, z: 0}
   m_LocalScale: {x: 1.3857999, y: 0.7745323, z: 1.3857999}
   m_Children: []
   m_Father: {fileID: 2103770944}
@@ -39448,7 +39477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728178768}
   m_LocalRotation: {x: -0, y: -0, z: 0.1895004, w: 0.98188066}
-  m_LocalPosition: {x: 1.2, y: -7.6, z: 100}
+  m_LocalPosition: {x: -3.8, y: -9.5, z: 100}
   m_LocalScale: {x: 2.0457616, y: 2.0457616, z: 2.0457616}
   m_Children:
   - {fileID: 2114852636}
@@ -42478,7 +42507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 6.387, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892084072
@@ -42508,16 +42537,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t             LOVE POTION\n\nA magical drink that makes the person
-    who sips it \nfall in love. Substituting peaches with peach schnaps\nresults
-    in a delicious Valentine\u2019s Day vodka cocktail. \nGrapefruit juice is also
-    recommended.\n"
+  m_Text: "LOVE POTION\n\nA magical drink that makes the person who sips it \nfall
+    in love. Substituting peaches with peach schnaps\nresults in a delicious Valentine\u2019s
+    Day vodka cocktail. \nGrapefruit juice is also recommended.\n"
 --- !u!222 &1892084073
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43258,7 +43286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 3.703, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929312635
@@ -43288,14 +43316,24 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t   FAIRY WINGS\n\nThe fairy wings were soft as petals and \ncolored
-    just as bright morning sky. Once dry\nand crushed they are known as fairy dust.\n"
+  m_Text: 'FAIRY WINGS
+
+
+    Fairy wings are soft as petals and colored
+
+    just
+    as bright as a morning sky. Once dry
+
+    and crushed, they are known as fairy
+    dust.
+
+'
 --- !u!222 &1929312636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43731,7 +43769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 2.54, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973493592
@@ -43761,15 +43799,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t MANDRAGORA\n\nThe roots of the plants often have \na resemblance
-    to humans. Mandrake \nplants scream as they\u2019re pulled from \nthe ground,
-    and anyone who hears them \nwill die instantly.\n"
+  m_Text: "MANDRAGORA\n\nThe roots of the plants often have \na resemblance to humans.
+    Mandrake \nplants scream as they\u2019re pulled from \nthe ground, and anyone
+    who hears them \nwill die instantly.\n"
 --- !u!222 &1973493593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -45028,7 +45066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.7, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051478880
@@ -45058,15 +45096,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\tWORMWOOD\n\nTraditionally green in color, the plant \nis also
-    referred to as \u2018the green fairy\u2019\nthanks to its widespread consumption
-    \nand hallucinogenic effect.\n"
+  m_Text: "WORMWOOD\n\nTraditionally green in color, the plant \nis also referred
+    to as \u2018the green fairy\u2019\nthanks to its widespread consumption \nand
+    hallucinogenic effect.\n"
 --- !u!222 &2051478881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46108,7 +46146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.638855, y: 16.805542}
+  m_AnchoredPosition: {x: 1.599999, y: 16.805542}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097793868
@@ -46138,14 +46176,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\t VODKA\n\nA strong distilled alcoholic beverage\ncomposed
-    of water and ethanol. \nIdeal for both potions and cocktails\n"
+  m_Text: "VODKA\n\nA strong distilled alcoholic beverage\ncomposed of water and
+    ethanol. \nIdeal for both potions and cocktails.\n"
 --- !u!222 &2097793869
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46226,7 +46264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103770943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -2, z: 0}
+  m_LocalPosition: {x: -3.8, y: -2, z: 0}
   m_LocalScale: {x: 1.2241814, y: 1.2241814, z: 1.2241814}
   m_Children:
   - {fileID: 1700298317}
@@ -46423,7 +46461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104961066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -6.3, z: 198.39749}
+  m_LocalPosition: {x: -7, y: -6.3, z: 198.39749}
   m_LocalScale: {x: 2.7929778, y: 2.7929778, z: 2.7929778}
   m_Children:
   - {fileID: 343661693}
