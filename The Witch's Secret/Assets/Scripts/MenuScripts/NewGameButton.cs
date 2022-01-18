@@ -20,6 +20,7 @@ public class NewGameButton : MonoBehaviour
     public void OpenNewGame()
     {
         PlayerPrefs.SetInt("Level", 1);
+        PlayerPrefs.SetInt("NewGameButtonPressed", 1);
         GameObject.FindGameObjectWithTag("closingPanel").GetComponent<Animator>().Play("ClosePanelMenu", -1, 0f);
         Invoke("LaterChangeScene", 2f);
     }

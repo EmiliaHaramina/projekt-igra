@@ -86,7 +86,8 @@ public class CauldronSlot : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("Level") == 1)
             {
-                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly"))
+                || !(objects.Contains("peaches")))
                 {
                     if (doOnce == false)
                     {
@@ -118,7 +119,8 @@ public class CauldronSlot : MonoBehaviour
             }
             else if (PlayerPrefs.GetInt("Level") == 2)
             {
-                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                if (!(objects.Contains("gin")) || !(objects.Contains("absinthe")) || !(objects.Contains("wormwood"))
+                || !(objects.Contains("fairydust")))
                 {
                     if (doOnce == false)
                     {
@@ -150,7 +152,8 @@ public class CauldronSlot : MonoBehaviour
             }
             else if (PlayerPrefs.GetInt("Level") == 3)
             {
-                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                if (!(objects.Contains("beer")) || !(objects.Contains("vodka")) || !(objects.Contains("wolfsbane"))
+                || !(objects.Contains("blindmicetails")))
                 {
                     if (doOnce == false)
                     {
@@ -182,7 +185,8 @@ public class CauldronSlot : MonoBehaviour
             }
             else if (PlayerPrefs.GetInt("Level") == 4)
             {
-                if (!(objects.Contains("garum")) || !(objects.Contains("vodka")) || !(objects.Contains("holly")) || !(objects.Contains("peaches")))
+                if (!(objects.Contains("gin")) || !(objects.Contains("holly")) || !(objects.Contains("fairywings"))
+                || !(objects.Contains("vampireteeth")))
                 {
                     if (doOnce == false)
                     {
@@ -210,6 +214,22 @@ public class CauldronSlot : MonoBehaviour
                         GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
                         Invoke("beforeLater4", 1f);
                     }
+                }
+            }
+
+            else if (PlayerPrefs.GetInt("Level") == 5)
+            {
+
+                if (doOnce == false)
+                {
+
+                    Debug.Log("WRONG COMBINATION");
+                    SoundManagerScript.PlaySound("wrongIngredients");
+                    GameObject.Find("Cauldron").gameObject.GetComponent<Animator>().Play("Success");
+                    Invoke("laterExplode", 2f);
+                    Invoke("laterdis", 1.2f);
+                    restartPosition = true;
+                    doOnce = true;
                 }
             }
 

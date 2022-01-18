@@ -36,6 +36,13 @@ public class BallTextsPrefs : MonoBehaviour
             levelTexts[2].gameObject.SetActive(false);
             levelTexts[3].gameObject.SetActive(true);
         }
+        else if (PlayerPrefs.GetInt("Level") == 5)
+        {
+            levelTexts[0].gameObject.SetActive(false);
+            levelTexts[1].gameObject.SetActive(false);
+            levelTexts[2].gameObject.SetActive(false);
+            levelTexts[3].gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -63,6 +70,13 @@ public class BallTextsPrefs : MonoBehaviour
             levelTexts[3].gameObject.SetActive(false);
         }
         else if (PlayerPrefs.GetInt("Level") == 4)
+        {
+            levelTexts[0].gameObject.SetActive(false);
+            levelTexts[1].gameObject.SetActive(false);
+            levelTexts[2].gameObject.SetActive(false);
+            levelTexts[3].gameObject.SetActive(true);
+        }
+        else if (PlayerPrefs.GetInt("Level") == 5)
         {
             levelTexts[0].gameObject.SetActive(false);
             levelTexts[1].gameObject.SetActive(false);
