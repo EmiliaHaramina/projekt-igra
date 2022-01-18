@@ -120,7 +120,7 @@ public class CauldronSlot : MonoBehaviour
             else if (PlayerPrefs.GetInt("Level") == 2)
             {
                 if (!(objects.Contains("gin")) || !(objects.Contains("absinthe")) || !(objects.Contains("wormwood"))
-                || !(objects.Contains("fairydust")))
+                || !(objects.Contains("fairywings")))
                 {
                     if (doOnce == false)
                     {
