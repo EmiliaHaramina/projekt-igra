@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip addIngredient, alcoholicDrink, beer, click, clock, confirmChoice, correctIngredients, fishSauce, mandragora, mysticBall, paper, peaches, plant, wrongIngredients;
+    public static AudioClip addIngredient, alcoholicDrink, beer, click, clock, confirmChoice, correctIngredients, fishSauce,
+                            mandragora, miceTails, mysticBall, oliveOil, paper, peaches, plant, teeth, wrongIngredients;
     static AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +19,13 @@ public class SoundManagerScript : MonoBehaviour
         fishSauce = Resources.Load<AudioClip>("FishSauceSound");
         mandragora = Resources.Load<AudioClip>("MandragoraSound");
         click = Resources.Load<AudioClip>("MouseClick");
+        miceTails = Resources.Load<AudioClip>("MiceTails");
         mysticBall = Resources.Load<AudioClip>("MysticBallSound");
+        oliveOil = Resources.Load<AudioClip>("OliveOil");
         paper = Resources.Load<AudioClip>("PaperSound");
         peaches = Resources.Load<AudioClip>("PeachesSound");
         plant = Resources.Load<AudioClip>("PlantSound");
+        teeth = Resources.Load<AudioClip>("Teeth");
         wrongIngredients = Resources.Load<AudioClip>("WrongIngredientsSound");
 
         audioSource = GetComponent<AudioSource>();
@@ -61,11 +65,17 @@ public class SoundManagerScript : MonoBehaviour
             case "mandragora":
                 audioSource.PlayOneShot(mandragora);
                 break;
+            case "miceTails":
+                audioSource.PlayOneShot(miceTails);
+                break;
             case "click":
                 audioSource.PlayOneShot(click);
                 break;
             case "mysticBall":
                 audioSource.PlayOneShot(mysticBall);
+                break;
+            case "oliveOil":
+                audioSource.PlayOneShot(oliveOil);
                 break;
             case "paper":
                 audioSource.PlayOneShot(paper);
@@ -75,6 +85,9 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "plant":
                 audioSource.PlayOneShot(plant);
+                break;
+            case "teeth":
+                audioSource.PlayOneShot(teeth);
                 break;
             case "wrongIngredients":
                 audioSource.PlayOneShot(wrongIngredients); 
