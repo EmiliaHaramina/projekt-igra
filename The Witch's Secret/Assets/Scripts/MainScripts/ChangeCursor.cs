@@ -8,6 +8,7 @@ public class ChangeCursor : MonoBehaviour
     public Texture2D cursorArrow;
     void Start()
     {
+       // PlayerPrefs.DeleteAll();
         Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
     }
 
