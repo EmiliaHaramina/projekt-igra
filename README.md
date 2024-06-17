@@ -1,22 +1,24 @@
-# projekt-igra
-The Witch's Secret
+# The Witch's Secret
  
-## Descritpion:
-2D Pixel Puzzle Adventure game that teaches user about simple cyphering and decyphering, created as a part of Bachelor's project at Faculty of Electrical Engineering and Computing, Zagreb.
+## Description:
+2D pixel art puzzle adventure game that teacher players about simple cryptography methods.
+Made for the Fundamentals of digital game development course at the Faculty of Electrical Engineering and Computing, University of Zagreb.
 
 ## Developers:
- - Mateo Paladin
- - Emilia Haramina
  - Dominik Arih
  - Jakov Halić
+ - Emilia Haramina
+ - Mateo Paladin
+ - Kristina Paleka
    
-## Teachers: 
-- Mirko Sužnjević
-- Lea Skorin Kapov
+## Mentors: 
 - Maja Matijašević
-
-## Asistent:
+- Lea Skorin-Kapov
+- Mirko Sužnjević
 - Ivan Bartolec
 
 ## Public Link:
 http://public.tel.fer.hr/witch/
+
+## Rector's Award 2021/2022:
+https://apps.unizg.hr/rektorova-nagrada/javno/akademske-godine/2021/nagradeni-radovi
